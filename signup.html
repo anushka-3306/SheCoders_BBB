@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - ChicCycle</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">
+        <img src="images/LOGO.png" alt="logo">
+        <span style="color: white;">ChicCycle</span>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="wardrobe.html" class="nav-link">My Wardrobe</a></li>
+          <li><a href="community.html" class="nav-link">Community</a></li>
+          <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+        </ul>
+      </nav>
+      <div class="auth-buttons">
+        <a href="login.html" class="btn btn-outline">Log In</a>
+        <a href="signup.html" class="btn btn-primary">Sign Up</a>
+      </div>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <div class="auth-container">
+      <div class="auth-card">
+        <div class="auth-header">
+          <h1>Join FashionSwap</h1>
+          <p>Create an account to start your sustainable fashion journey</p>
+        </div>
+        
+        <form class="auth-form" id="signup-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="firstName" placeholder="Your first name" required>
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="lastName" placeholder="Your last name" required>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email</label>
+            <div class="input-with-icon">
+              <i class="fas fa-envelope"></i>
+              <input type="email" id="email" name="email" placeholder="Your email address" required>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="password">Password</label>
+            <div class="input-with-icon">
+              <i class="fas fa-lock"></i>
+              <input type="password" id="password" name="password" placeholder="Create a password" required>
+            </div>
+            <div class="password-strength" id="password-strength">
+              <div class="strength-bar">
+                <div class="strength-fill" style="width: 0%"></div>
+              </div>
+              <span class="strength-text">Password strength</span>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="location">Location</label>
+            <div class="input-with-icon">
+              <i class="fas fa-map-marker-alt"></i>
+              <input type="text" id="location" name="location" placeholder="City, Country">
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label>Fashion Preferences (Select all that apply)</label>
+            <div class="checkbox-grid">
+              <div class="checkbox-group">
+                <input type="checkbox" id="casual" name="preferences" value="casual">
+                <label for="casual">Casual</label>
+              </div>
+              <div class="checkbox-group">
+                <input type="checkbox" id="formal" name="preferences" value="formal">
+                <label for="formal">Formal</label>
+              </div>
+              <div class="checkbox-group">
+                <input type="checkbox" id="bohemian" name="preferences" value="bohemian">
+                <label for="bohemian">Bohemian</label>
+              </div>
+              <div class="checkbox-group">
+                <input type="checkbox" id="vintage" name="preferences" value="vintage">
+                <label for="vintage">Vintage</label>
+              </div>
+              <div class="checkbox-group">
+                <input type="checkbox" id="minimalist" name="preferences" value="minimalist">
+                <label for="minimalist">Minimalist</label>
+              </div>
+              <div class="checkbox-group">
+                <input type="checkbox" id="streetwear" name="preferences" value="streetwear">
+                <label for="streetwear">Streetwear</label>
+              </div>
+            </div>
+          </div>
+          
+          <div class="checkbox-group terms-checkbox">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+          </div>
+          
+          <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+          
+          <div class="auth-divider">
+            <span>or sign up with</span>
+          </div>
+          
+          <div class="social-login">
+            <button type="button" class="btn btn-social">
+              <i class="fab fa-google"></i>
+              Google
+            </button>
+            <button type="button" class="btn btn-social">
+              <i class="fab fa-facebook-f"></i>
+              Facebook
+            </button>
+          </div>
+        </form>
+        
+        <div class="auth-footer">
+          <p>Already have an account? <a href="login.html">Log in</a></p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="logo">
+          <img src="images/LOGO.png" alt="logo">
+          <span style="color: white;">ChicCycle</span>
+        </div>
+        <div class="footer-copyright">
+          © 2025 ChicCycle. All rights reserved. Promoting sustainable fashion choices.
+        </div>
+        <div class="footer-links">
+          <a href="#">Privacy</a>
+  
+          <a href="#">Terms</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="auth.js"></script>
+</body>
+</html>

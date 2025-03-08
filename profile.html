@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile - ChicCycle</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+          <div class="logo">
+            <img src="images/LOGO.png" alt="logo">
+            <span style="color: white;">ChicCycle</span>
+          </div>
+          <nav class="main-nav">
+            <ul>
+              <li><a href="index.html" class="nav-link">Home</a></li>
+              <li><a href="wardrobe.html" class="nav-link">My Wardrobe</a></li>
+              <li><a href="community.html" class="nav-link">Community</a></li>
+              <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+            </ul>
+          </nav>
+          <div class="auth-buttons">
+            <a href="login.html" class="btn btn-outline">Log In</a>
+            <a href="signup.html" class="btn btn-primary">Sign Up</a>
+          </div>
+          <button class="mobile-menu-toggle" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </header>
+
+  <main>
+    <div class="container">
+      <div class="profile-header">
+        <div class="profile-avatar">
+          <img src="images/girl3.jpg" alt="User Avatar">
+        </div>
+        <div class="profile-info">
+          <h1>Emily Morgan</h1>
+          <p>@emilymorgan</p>
+          <div class="profile-stats">
+            <span><i class="fas fa-tshirt"></i> 35 Items Swapped</span>
+            <span><i class="fas fa-award"></i> 5 Badges Earned</span>
+            <span><i class="fas fa-coins"></i> 120 Credits</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tabs-container">
+        <div class="tabs">
+          <button class="tab-btn active" data-tab="activity">Recent Activity</button>
+          <button class="tab-btn" data-tab="saved-items">Saved Items</button>
+          <button class="tab-btn" data-tab="badges">Badges</button>
+        </div>
+      </div>
+
+      <div class="tab-content active" id="activity">
+        <div class="activity-feed">
+          <div class="card activity-card">
+            <p><strong>Emily</strong> joined the <em>Spring Capsule Challenge</em></p>
+            <span class="activity-time">2 hours ago</span>
+          </div>
+          <div class="card activity-card">
+            <p><strong>Emily</strong> swapped a <em>Denim Jacket</em> with @SarahM</p>
+            <span class="activity-time">1 day ago</span>
+          </div>
+          <div class="card activity-card">
+            <p><strong>Emily</strong> earned the <em>Sustainable Stylist</em> badge</p>
+            <span class="activity-time">3 days ago</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="saved-items">
+        <div class="saved-items-grid">
+          <div class="card saved-item-card">
+            <img src="https://placehold.co/300x400" alt="Floral Dress">
+            <h3>Floral Summer Dress</h3>
+            <p>Zara | Size M</p>
+          </div>
+          <div class="card saved-item-card">
+            <img src="https://placehold.co/300x400" alt="Denim Jacket">
+            <h3>Denim Jacket</h3>
+            <p>Levi's | Size S</p>
+          </div>
+          <div class="card saved-item-card">
+            <img src="https://placehold.co/300x400" alt="Leather Bag">
+            <h3>Leather Crossbody Bag</h3>
+            <p>Mango | One Size</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="badges">
+        <div class="badges-grid">
+          <div class="badge-card">
+            <i class="fas fa-leaf badge-icon"></i>
+            <h3>Sustainable Stylist</h3>
+            <p>Earned for swapping 20+ items</p>
+          </div>
+          <div class="badge-card">
+            <i class="fas fa-recycle badge-icon"></i>
+            <h3>Eco Innovator</h3>
+            <p>Upcycled 5+ items</p>
+          </div>
+          <div class="badge-card">
+            <i class="fas fa-star badge-icon"></i>
+            <h3>Challenge Master</h3>
+            <p>Completed 3+ challenges</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="logo">
+          <img src="images/LOGO.png" alt="logo">
+          <span style="color: white;">ChicCycle</span>
+        </div>
+        <div class="footer-copyright">
+          © 2025 ChicCycle. All rights reserved. Promoting sustainable fashion choices.
+        </div>
+        <div class="footer-links">
+          <a href="#">Privacy</a>
+  
+          <a href="#">Terms</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="profile.js"></script>
+</body>
+</html>

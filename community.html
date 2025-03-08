@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Challenges - ChicCycle</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">
+        <img src="images/LOGO.png" alt="logo">
+        <span style="color: white;">ChicCycle</span>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="wardrobe.html" class="nav-link">My Wardrobe</a></li>
+          <li><a href="community.html" class="nav-link">Community</a></li>
+          <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+        </ul>
+      </nav>
+      <div class="auth-buttons">
+        <a href="login.html" class="btn btn-outline">Log In</a>
+        <a href="signup.html" class="btn btn-primary">Sign Up</a>
+      </div>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="community-header">
+        <div>
+          <h1>Community Challenges</h1>
+          <p>Participate in challenges to earn badges and extra credits</p>
+        </div>
+        <button class="btn btn-primary">Create Challenge</button>
+      </div>
+      
+      <div class="tabs-container">
+        <div class="tabs">
+          <button class="tab-btn active" data-tab="active-challenges">Active Challenges</button>
+          <button class="tab-btn" data-tab="submissions">Recent Submissions</button>
+          <button class="tab-btn" data-tab="leaderboard">Leaderboard</button>
+          <button class="tab-btn" data-tab="discussion">Discussion</button>
+        </div>
+      </div>
+      
+      <div class="tab-content active" id="active-challenges">
+        <div class="challenges-grid">
+          <div class="card challenge-card">
+            <div class="challenge-image">
+              <img src="images/capsule.png" alt="Spring Capsule Challenge">
+            </div>
+            <div class="card-content">
+              <div class="card-header">
+                <h3>Spring Capsule Challenge</h3>
+                <span class="badge badge-active">23 days left</span>
+              </div>
+              <ul style="list-style-type: square;">
+                <li>Create a 10-piece spring capsule wardrobe with at least 5 swapped items.</li>
+                <li>Rules: Outfits should be season-appropriate and styled uniquely; submit your final looks within the challenge period.</li>
+                <li>Reward: Earn 150 credits for completing the challenge!</li>
+              </ul>
+              <br>
+              <div class="challenge-meta">
+                <div class="meta-item">
+                  <i class="fas fa-users"></i>
+                  <span>124 participants</span>
+                </div>
+                <div class="meta-item">
+                  <i class="fas fa-award"></i>
+                  <span>50 credits reward</span>
+                </div>
+              </div>
+              <div class="progress-stat">
+                <div class="progress-header">
+                  <span>Your progress</span>
+                  <span>40%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 40%"></div>
+                </div>
+              </div>
+              <button class="btn btn-primary btn-block">Continue Challenge</button>
+            </div>
+          </div>
+          
+          <div class="card challenge-card">
+            <div class="challenge-image">
+              <img src="images/upscaling.png" alt="Upcycling Workshop">
+            </div>
+            <div class="card-content">
+              <div class="card-header">
+                <h3>Upcycling Workshop</h3>
+                <span class="badge badge-active">15 days left</span>
+              </div>
+              <ul style="list-style-type: square;">
+                <li>Create a 10-piece spring capsule wardrobe with at least 5 swapped items.</li>
+                <li>Rules: Outfits should be season-appropriate and styled uniquely; submit your final looks within the challenge period.</li>
+                <li>Reward: Earn 150 credits for completing the challenge!</li>
+              </ul>
+              <br>
+              <div class="challenge-meta">
+                <div class="meta-item">
+                  <i class="fas fa-users"></i>
+                  <span>89 participants</span>
+                </div>
+                <div class="meta-item">
+                  <i class="fas fa-award"></i>
+                  <span>50 credits reward</span>
+                </div>
+              </div>
+              <div class="progress-stat">
+                <div class="progress-header">
+                  <span>Your progress</span>
+                  <span>65%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 65%"></div>
+                </div>
+              </div>
+              <button class="btn btn-primary btn-block">Continue Challenge</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="tab-content" id="submissions">
+        <div class="submissions-grid">
+          <div class="card submission-card">
+            <div class="submission-image">
+              <img src="images/capsule.png" alt="Spring Capsule Collection">
+            </div>
+            <div class="card-content">
+              <div class="submission-author">
+                <div class="author-avatar">
+                  <img src="images/girl.jpg" alt="Sarah M.">
+                </div>
+                <div>
+                  <span class="author-name">Sarah M.</span>
+                  <span class="submission-time">2 days ago</span>
+                </div>
+              </div>
+              <h3>My Spring Capsule Collection</h3>
+              <p>I created this capsule with 7 swapped items and 3 pieces I already owned.</p>
+              <div class="submission-actions">
+                <div class="action-buttons">
+                  <button class="btn btn-text">
+                    <i class="fas fa-heart"></i> 42
+                  </button>
+                  <button class="btn btn-text">
+                    <i class="fas fa-comment"></i> 12
+                  </button>
+                </div>
+                <button class="btn btn-outline btn-sm">View Details</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card submission-card">
+            <div class="submission-image">
+              <img src="images/upscaling.png" alt="Upcycled Denim Bag">
+            </div>
+            <div class="card-content">
+              <div class="submission-author">
+                <div class="author-avatar">
+                  <img src="images/girl2.jpeg" alt="Jessica K.">
+                </div>
+                <div>
+                  <span class="author-name">Jessica K.</span>
+                  <span class="submission-time">3 days ago</span>
+                </div>
+              </div>
+              <h3>Upcycled Denim Bag</h3>
+              <p>Made from an old pair of jeans that didn't fit anymore!</p>
+              <div class="submission-actions">
+                <div class="action-buttons">
+                  <button class="btn btn-text">
+                    <i class="fas fa-heart"></i> 38
+                  </button>
+                  <button class="btn btn-text">
+                    <i class="fas fa-comment"></i> 8
+                  </button>
+                </div>
+                <button class="btn btn-outline btn-sm">View Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="tab-content" id="leaderboard">
+        <div class="card">
+          <div class="card-header">
+            <h3>Challenge Champions</h3>
+          </div>
+          <div class="leaderboard-list">
+            <div class="leaderboard-item">
+              <div class="leaderboard-rank">1</div>
+              <div class="leaderboard-user">
+                <div class="author-avatar">
+                  <img src="https://placehold.co/40x40" alt="User 1">
+                </div>
+                <div>
+                  <span class="author-name">User 1</span>
+                  <span class="submission-time">5 challenges completed</span>
+                </div>
+              </div>
+              <div class="leaderboard-score">
+                <span class="badge badge-active">300 points</span>
+                <i class="fas fa-award gold-award"></i>
+              </div>
+            </div>
+            
+            <div class="leaderboard-item">
+              <div class="leaderboard-rank">2</div>
+              <div class="leaderboard-user">
+                <div class="author-avatar">
+                  <img src="https://placehold.co/40x40" alt="User 2">
+                </div>
+                <div>
+                  <span class="author-name">User 2</span>
+                  <span class="submission-time">4 challenges completed</span>
+                </div>
+              </div>
+              <div class="leaderboard-score">
+                <span class="badge badge-active">270 points</span>
+              </div>
+            </div>
+            
+            <div class="leaderboard-item">
+              <div class="leaderboard-rank">3</div>
+              <div class="leaderboard-user">
+                <div class="author-avatar">
+                  <img src="https://placehold.co/40x40" alt="User 3">
+                </div>
+                <div>
+                  <span class="author-name">User 3</span>
+                  <span class="submission-time">3 challenges completed</span>
+                </div>
+              </div>
+              <div class="leaderboard-score">
+                <span class="badge badge-active">240 points</span>
+              </div>
+            </div>
+            
+            <div class="leaderboard-item">
+              <div class="leaderboard-rank">4</div>
+              <div class="leaderboard-user">
+                <div class="author-avatar">
+                  <img src="https://placehold.co/40x40" alt="User 4">
+                </div>
+                <div>
+                  <span class="author-name">User 4</span>
+                  <span class="submission-time">2 challenges completed</span>
+                </div>
+              </div>
+              <div class="leaderboard-score">
+                <span class="badge badge-active">210 points</span>
+              </div>
+            </div>
+            
+            <div class="leaderboard-item">
+              <div class="leaderboard-rank">5</div>
+              <div class="leaderboard-user">
+                <div class="author-avatar">
+                  <img src="https://placehold.co/40x40" alt="User 5">
+                </div>
+                <div>
+                  <span class="author-name">User 5</span>
+                  <span class="submission-time">1 challenge completed</span>
+                </div>
+              </div>
+              <div class="leaderboard-score">
+                <span class="badge badge-active">180 points</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="logo">
+          <img src="images/LOGO.png" alt="logo">
+          <span style="color: white;">ChicCycle</span>
+        </div>
+        <div class="footer-copyright">
+          © 2025 ChicCycle. All rights reserved. Promoting sustainable fashion choices.
+        </div>
+        <div class="footer-links">
+          <a href="#">Privacy</a>
+  
+          <a href="#">Terms</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="community.js"></script>
+</body>
+</html>
+

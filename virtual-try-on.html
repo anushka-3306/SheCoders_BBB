@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Try-On - ChicCycle</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">
+        <img src="images/LOGO.png" alt="logo">
+        <span style="color: white;">ChicCycle</span>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="wardrobe.html" class="nav-link">My Wardrobe</a></li>
+          <li><a href="community.html" class="nav-link">Community</a></li>
+          <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+        </ul>
+      </nav>
+      <div class="auth-buttons">
+        <a href="login.html" class="btn btn-outline">Log In</a>
+        <a href="signup.html" class="btn btn-primary">Sign Up</a>
+      </div>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="card try-on-card">
+        <div class="try-on-layout">
+          <div class="try-on-controls">
+            <h2>Virtual Try-On</h2>
+            <p>See how this item will look on you before claiming it using our AR technology.</p>
+            
+            <div class="tabs-container">
+              <div class="tabs">
+                <button class="tab-btn active" data-tab="photo-upload">Upload Photo</button>
+                <button class="tab-btn" data-tab="avatar">Use Avatar</button>
+              </div>
+            </div>
+            
+            <div class="tab-content active" id="photo-upload">
+              <div class="upload-area">
+                <i class="fas fa-camera"></i>
+                <p>Upload a full-body photo or take one with your camera</p>
+                <button class="btn btn-primary">Upload Photo</button>
+              </div>
+            </div>
+            
+            <div class="tab-content" id="avatar">
+              <div class="avatar-grid">
+                <div class="avatar-option">
+                  <img src="https://placehold.co/100x200" alt="Avatar 1">
+                </div>
+                <div class="avatar-option">
+                  <img src="https://placehold.co/100x200" alt="Avatar 2">
+                </div>
+                <div class="avatar-option">
+                  <img src="https://placehold.co/100x200" alt="Avatar 3">
+                </div>
+              </div>
+            </div>
+            
+            <button class="btn btn-primary btn-block" id="try-on-btn">Try It On</button>
+          </div>
+          
+          <div class="try-on-preview">
+            <div class="preview-placeholder" id="preview-placeholder">
+              <p>Your virtual try-on will appear here after processing</p>
+            </div>
+            <div class="preview-result" id="preview-result" style="display: none;">
+              <img src="https://placehold.co/300x500" alt="Virtual try-on result">
+              <div class="preview-actions">
+                <button class="btn btn-icon">
+                  <i class="fas fa-download"></i>
+                </button>
+                <button class="btn btn-icon">
+                  <i class="fas fa-share-alt"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="logo">
+          <img src="images/LOGO.png" alt="logo">
+          <span style="color: white;">ChicCycle</span>
+        </div>
+        <div class="footer-copyright">
+          © 2025 ChicCycle. All rights reserved. Promoting sustainable fashion choices.
+        </div>
+        <div class="footer-links">
+          <a href="#">Privacy</a>
+  
+          <a href="#">Terms</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="try-on.js"></script>
+</body>
+</html>
+
